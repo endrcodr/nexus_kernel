@@ -166,3 +166,16 @@ get_mem_val:
     xor r10, r10 ; Clear R10
     xor r11, r11 ; Clear R11
     ret ; Return the physical address in RAX
+
+.invalid_read:
+    mov rax, 0x100 ; Set RAX to 0x100 to indicate an invalid read
+    xor rcx, rcx ; Clear RCX
+    xor rdx, rdx ; Clear RDX
+    xor rbx, rbx ; Clear RBX
+    xor rsi, rsi ; Clear RSI
+    xor rdi, rdi ; Clear RDI
+    xor r8, r8 ; Clear R8
+    xor r9, r9 ; Clear R9
+    xor r10, r10 ; Clear R10
+    xor r11, r11 ; Clear R11
+    ret ; Return 0x100 in RAX to indicate an invalid read
