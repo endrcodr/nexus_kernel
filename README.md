@@ -9,3 +9,5 @@ Usage of the Nexus kernel is only as limited as your creativity is. As an endgam
 The Nexus kernel uses a binary file system for its core systems, and an external file system package is required for compatibility with any form of standard file system.
 
 *AI is not to be used in the creation of this project or any packages for or derivatives of this project without being reviewed and approved by an experienced human. Encrypted, obfuscated, convoluted, or otherwise hidden code is not allowed for any purpose.*
+
+Nexus is classified as a "nanokernel", consisting very simply of a memory controller, a program scheduler, and a module "hub". All other functions, including I/O support, coding language support, any form of hardware drivers, file systems, sandboxing, virtual machines, et cetera, are provided externally as "modules" that can be "docked" in the nanokernel.
